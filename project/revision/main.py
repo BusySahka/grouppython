@@ -9,7 +9,10 @@ def main():
     result = is_number_bigger_then_given(candidate_number=5, theshold=1)
     print(result)
 
-    add_salt_to_list([])
+    given_list = []
+    add_salt_to_list(given_list)
+    add_salt_to_list(given_list)
+    print(given_list)
 
 
 

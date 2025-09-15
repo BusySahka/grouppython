@@ -6,5 +6,7 @@ def is_number_bigger_then_given(candidate_number: float, theshold: float = 10) -
 
 
 def add_salt_to_list(given_list: list) -> None:
-    print(uuid4())
-    #given_list.append
+    """WARNING"""
+    id = uuid4().hex
+    print(id)
+    given_list.append(id)
