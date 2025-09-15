@@ -1,7 +1,4 @@
-import logging
-
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("app")
+from servises.logger import logger
 
 
 def return_hello_buddy() -> str:
