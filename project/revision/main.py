@@ -1,7 +1,8 @@
 from function import is_number_bigger_then_given
 from project.revision.function import add_salt_to_list
 from hw_functions_utils import return_hello_buddy, return_biggest_num_from_array, multiply_two_numbers
-from utils import greet_person, is_even, reverse_string, calculate_average, add_person_to_list, count_vowels, fahrenheit_to_celsius
+from revision.utils import say_hello
+from utils import greet_person, is_even, reverse_string, calculate_average, add_person_to_list, count_vowels, fahrenheit_to_celsius, say_hello
 
 def main():
     #result = is_number_bigger_then_given(candidate_number=5)
@@ -18,7 +19,7 @@ def main():
     print(add_person_to_list(["Олена", "Вікторія"], "Саша"))
     print(count_vowels("Як ти, друже?"))
     print(fahrenheit_to_celsius(1000))
-    print(fahrenheit_to_celsius(100))
+    print(say_hello("Олександра"))
 
 
 if __name__ == "__main__":
