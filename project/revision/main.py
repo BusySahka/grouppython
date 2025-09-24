@@ -18,6 +18,7 @@ def main():
     print(add_person_to_list(["Олена", "Вікторія"], "Саша"))
     print(count_vowels("Як ти, друже?"))
     print(fahrenheit_to_celsius(1000))
+    print(fahrenheit_to_celsius(100))
 
 
 if __name__ == "__main__":
