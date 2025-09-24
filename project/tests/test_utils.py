@@ -19,8 +19,8 @@ def test_get_string_length_with_no_whitespaces():
 
 
 def test_get_auto_distance():
-    given_speed = 80
+    given_speed = 10
     given_time = 6
     actual_result = get_auto_distance(speed=given_speed, time=given_time)
-    expectet_result = 480
+    expectet_result = 60
     assert actual_result == expectet_result
