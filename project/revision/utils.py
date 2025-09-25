@@ -18,9 +18,13 @@ def add_person_to_list(people: list[str], person: str) -> list[str]:
     return people + [person]
 
 
-def count_vowels(text: str) -> int:
+def count_vowels(text: str,) -> int:
     vowels = "aeiouyаеєиіїоуюяAEIOUYАЕЄИІЇОУЮЯ"
-    return sum(ch in vowels for ch in text)
+    count = 0
+    for character in text:
+        if character in vowels:
+            count += 1
+    return count
 
 
 def fahrenheit_to_celsius(f: float) -> float:
