@@ -3,10 +3,12 @@ from homeworks.homework9 import get_ticket_price
 
 
 def test_get_ticket_price():
-    given_age = 50
-    expectet_result = 150
-    actual_result = get_ticket_price(given_age)
-    assert actual_result == expectet_result
+    assert get_ticket_price(5) == 0.0
+    assert get_ticket_price(10) == 75
+    assert get_ticket_price(18) == 150
+    assert get_ticket_price(70) == 105
+
+
 
 
 
