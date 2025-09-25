@@ -9,3 +9,9 @@ def get_ticket_price(age: int) -> float:
         return BASE_PRICE
     else:
         return BASE_PRICE * 0.7
+
+
+
+
+
+""""Homework 9"""
