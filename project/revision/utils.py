@@ -30,5 +30,6 @@ def count_vowels(text: str,) -> int:
 def fahrenheit_to_celsius(f: float) -> float:
     return (f - 32) * 5 / 9
 
+
 def say_hello(name: str) -> str:
     return f"Hello. {name}!"
