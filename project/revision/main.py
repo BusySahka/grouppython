@@ -4,11 +4,20 @@ from hw_functions_utils import return_hello_buddy, return_biggest_num_from_array
 from revision.utils import say_hello
 from utils import greet_person, is_even, reverse_string, calculate_average, add_person_to_list, count_vowels, fahrenheit_to_celsius, say_hello
 from homeworks.homework11 import return_as_dictionary, calculate_sum, greet_person, multiply_numbers
+from homeworks.homework15 import Book, Library
 
 def main():
-    print(calculate_sum(11, 17))
-    print(greet_person("Sashka"))
-    print(multiply_numbers(5, 7, 9))
+    book1 = Book("F. Scott Fitzgerald", "The Great Gatsby", 111)
+    book2 = Book("Mark Twain", "The Adventures of Tom Sawyer", 222)
+    library = Library("Main city Library")
+    library.add_book(book1)
+    library.add_book(book2)
+    library.list_books()
+    library.remove_book_by_id(111)
+    library.list_books()
+    #print(calculate_sum(11, 17))
+    #print(greet_person("Sashka"))
+    #print(multiply_numbers(5, 7, 9))
     #result = is_number_bigger_then_given(candidate_number=5)
     #print(result)
     #result = is_number_bigger_then_given(candidate_number=5, theshold=1)
