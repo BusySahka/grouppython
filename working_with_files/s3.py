@@ -19,6 +19,6 @@ s3client = boto3.client(
 
 # UPLOAD FILE
 
-target_file_name = 'images/FEDCHENKO/summer12345.jpeg'
-s3client.upload_file('C:/Users/Shashka/Pictures/summer.jpg', BUCKET_NAME, target_file_name)
+target_file_name = 'images/FEDCHENKO/games.jpeg'
+s3client.upload_file('C:/Users/Shashka/Pictures/games.jpg', BUCKET_NAME, target_file_name)
 print(f'{PUBLIC_URL}/{target_file_name}')
