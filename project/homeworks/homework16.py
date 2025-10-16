@@ -20,3 +20,7 @@ class Team:
 
     def list_players(self):
         return [str(player) for player in self.players]
+
+
+
+

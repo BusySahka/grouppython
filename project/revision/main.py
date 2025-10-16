@@ -6,7 +6,7 @@ def main():
     team.add_player(Player("Ronaldo", 7))
     print("Список гравців:", team.list_players())
     team.remove_player(10)
-    print("Після видалення:", team.list_players())
+    print("Після видалення: ", team.list_players())
 
 
 

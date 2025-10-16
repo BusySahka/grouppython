@@ -38,5 +38,5 @@ class TestTeam:
         for player in sample_players:
             team.add_player(player)
         players_list = team.list_players()
-        expected = ["Messi (#10)", "Ronaldo (#7)", "Mbappe (#9)"]
+        expected = ["Messi (#10)", "Ronaldo (#7 )", "Mbappe (#9)"]
         assert players_list == expected
