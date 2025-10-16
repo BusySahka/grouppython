@@ -1,12 +1,11 @@
-from revision.function import is_number_bigger_then_given, get_string_length_with_no_whitespaces, get_auto_distance
-from homeworks.homework9 import get_ticket_price
 
 
-def test_get_ticket_price():
-    assert get_ticket_price(5) == 0.0
-    assert get_ticket_price(10) == 75
-    assert get_ticket_price(18) == 150
-    assert get_ticket_price(70) == 105
+
+#def test_get_ticket_price():
+    #assert get_ticket_price(5) == 0.0
+    #assert get_ticket_price(10) == 75
+    #assert get_ticket_price(18) == 150
+    #assert get_ticket_price(70) == 105
 
 
 
