@@ -8,4 +8,8 @@ REDIS_PORT = os.environ.get("REDIS_PORT")
 REDIS_USER = os.environ.get("REDIS_USER")
 REDIS_PASSWORD = os.environ.get("REDIS_PASSWORD")
 
-print(REDIS_HOST)
+
+PGHOST=os.environ.get("PGHOST")
+PGDATABASE=os.environ.get("PGDATABASE")
+PGUSER=os.environ.get("RGUSER")
+PGPASSWORD=os.environ.get("PGPASSWORD")
