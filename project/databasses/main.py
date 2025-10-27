@@ -50,7 +50,15 @@ with psycopg2.connect(
         port=5432,
 ) as connection:
     with connection.cursor() as cursor:
-        query_insert = 'INSERT INTO topics (title, description) VALUES (%s, %s)'
-        cursor.execute(query_insert, ("School", "All about solving math problems"))
-        cursor.execute(query_insert, ("Sport", "How not to lose motivation"))
-        cursor.execute(query_insert, ("Programming", "Is it really that hard?"))
+        query_customer = 'INSERT INTO customer (name) VALUES (%s) RETURNING id'
+        cursor.execute(query_customer, ('Sashka',))
+        customer_id = cursor.fetchone()[0]
+
+        query_brand = 'INSERT INTO brand (name) VALUES (%s) RETURNING id'
+        cursor.execute(query_brand, ('Toyota',))
+        brand_id = cursor.fetchone()[0]
+
+        query_car = 'INSERT INTO car (model, brand_id, customer_id) VALUES (%s, %s, %s)'
+        cursor.execute(query_car, ('Prius', brand_id, customer_id))
+
+        connection.commit()
